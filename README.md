@@ -7,27 +7,27 @@ middleman for smooth transactions.
 
 #Agendas
 
---> proving info with respect to the current season 
---> adivsory chat box
---> weather alerts
---> critical alerts(fires,plagues)
---> open market to connect sellers straight to the buyers
+* proving info with respect to the current season 
+* adivsory chat box
+* weather alerts
+* critical alerts(fires,plagues)
+* open market to connect sellers straight to the buyers
 
 #Goals
 
---> designing template
---> creating sign up form
---> email integration
---> providing info according to geolocatlity
---> creating models
---> establising datbase
---> finalizing modules
---> testing the modules
+* designing template
+* creating sign up form
+* email integration
+* providing info according to geolocatlity
+* creating models
+* establising datbase
+* finalizing modules
+* testing the modules
 
 #Resources
 
 * Info obtained from data.gov.in 
-* DGHHHFGSD
+
 #WorkFlow
 
 --> 
