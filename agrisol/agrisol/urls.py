@@ -23,6 +23,8 @@ urlpatterns = [
     #path("farmer",views.farmer,name="farmer"),
     path("farmer/",include("farmer.urls",namespace="cust_sell")),
     path("cust_sell/",include("cust_sell.urls",namespace="cust_sell")),
+    path("accounts/",include("accounts.urls",namespace="accounts")),
     path("hepline/",include("helpline.urls",namespace="helpline")),
     path("household/",include("household.urls",namespace="household")),
+    path("logout",views.log_out,name="log_out"),
 ]

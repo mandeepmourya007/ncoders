@@ -6,8 +6,11 @@ from . import views
 app_name = 'accounts'
 urlpatterns = [
 
-    #path("", views.farmer, name="home"),
+
+    path("signup", views.sign_up, name="sign_up"),
+    #path("login", views.log_in, name="login"),
     # path("farmer",views.farmer,name="farmer"),
     #path("farmer/", include("farmer.urls", namespace="cust_sell")),
+    path("logout",views.log_out,name="logout"),
 
 ]

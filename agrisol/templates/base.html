@@ -40,7 +40,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="mian-content">
 
 <<<<<<< HEAD
-                    
+
 =======
         <div class="header-top-w3layouts-agile">
             <div class="top-head-wthree text-left">
@@ -111,7 +111,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                                 </ul>
                                  <div class="col-md-3 login-right-img text-center">
+                                   {% if request.user.is_authenticated %}
+                                                         <li class="nav-item">
+                                                           <div class="col-lg-6 col-md-6">
+                                                               <a href= "{% url "accounts:logout" %}" class="btn btn-rose btn-round">
 
+                                                                      {{request.user}} Logout
+                                                                 </a>
+                                                               </div>
+                                                               </li>
+                        {% else %}
                         <a class="request text-uppercase" href="#" data-toggle="modal" data-target="#exampleModalCenter">Sign In</a>
                         <a class="request text-uppercase" href="#" data-toggle="modal" data-target="#exampleModalCenter2">Sign Up</a>
                     </div>
@@ -121,7 +130,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <!--</form>-->
                             </div>
                         </nav>
-
+         {% endif %}
                     </header>
                 </div>
             </div>
@@ -240,15 +249,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                     <div class="login px-4 mx-auto mw-100">
                         <h5 class="text-center mb-4">Login Now</h5>
-                        <form action="#" method="post">
+                        <form  method="post">
+                              {% csrf_token %}
                             <div class="form-group">
                                 <label class="mb-2">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required="">
+                                <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="" required="">
                                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                             </div>
                             <div class="form-group">
                                 <label class="mb-2">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="" required="">
+                                <input type="password" class="form-control"  name="password" id="exampleInputPassword1" placeholder="" required="">
                             </div>
                             <div class="form-check mb-2">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -278,20 +288,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="modal-body">
                     <div class="login px-4 mx-auto mw-100">
                         <h5 class="text-center mb-4">Register Now</h5>
-                        <form action="#" method="post">
+                        <!-- <form action="#" method="post">
+                          {% csrf_token %}
                             <div class="form-group">
                                 <label>First name</label>
 
-                                <input type="text" class="form-control" id="validationDefault01" placeholder="" required="">
+                                <input type="text"  name="first_name" class="form-control" id="validationDefault01" placeholder="" required="">
                             </div>
                             <div class="form-group">
                                 <label>Last name</label>
-                                <input type="text" class="form-control" id="validationDefault02" placeholder="" required="">
+                                <input type="text" name="last_name" class="form-control" id="validationDefault02" placeholder="" required="">
                             </div>
 
                             <div class="form-group">
                                 <label class="mb-2">Password</label>
-                                <input type="password" class="form-control" id="password1" placeholder="" required="">
+                                <input type="password" name="password1" class="form-control" id="password1" placeholder="" required="">
                             </div>
                             <div class="form-group">
                                 <label>Confirm Password</label>
@@ -302,6 +313,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <p class="text-center pb-4">
                                 <a href="#">By clicking Register, I agree to your terms</a>
                             </p>
+                        </form> -->
+                        <form class="" action="{%  url "home" %}" method="post">
+                              {% csrf_token %}
+                          {{ form.as_p }}
+                          <button type="submit" class="btn btn-primary submit mb-4">Register</button>
                         </form>
 
                     </div>
