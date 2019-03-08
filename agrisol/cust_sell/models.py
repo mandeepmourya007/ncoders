@@ -18,6 +18,8 @@ class seller(models.Model):
 
     state = models.CharField(max_length=25,choices=state,default='Punjab')
     city = models.CharField(max_length=25)
+    def __str__(self):
+        return self.first_name
 
 
 
@@ -26,7 +28,5 @@ class customer(models.Model):
     last_name = models.CharField(max_length=25,default="")
     #place = models.IntegerField(max_length=25)
     mobile_number = models.CharField(max_length=10)
-
-
-
-
+    def __str__(self):
+        return self.first_name
