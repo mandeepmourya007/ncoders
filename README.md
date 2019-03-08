@@ -5,7 +5,7 @@ sending alerts about hazardous weather beforehand while simultaneously tackling 
 middleman for smooth transactions.  
 
 
-#Agendas
+## Agendas
 
 * proving info with respect to the current season 
 * adivsory chat box
@@ -13,7 +13,7 @@ middleman for smooth transactions.
 * critical alerts(fires,plagues)
 * open market to connect sellers straight to the buyers
 
-#Goals
+## Goals
 
 * designing template
 * creating sign up form
@@ -24,11 +24,11 @@ middleman for smooth transactions.
 * finalizing modules
 * testing the modules
 
-#Resources
+## Resources
 
 * Info obtained from data.gov.in 
 
-#WorkFlow
+## WorkFlow
 
 --> 
 
