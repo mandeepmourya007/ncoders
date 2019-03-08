@@ -21,3 +21,5 @@ def home(request):
             return redirect("home")
     return render(request,"home.html")
 
+def farmer(request):
+    return render(request,"farmer.html")

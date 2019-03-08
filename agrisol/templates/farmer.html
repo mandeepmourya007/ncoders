@@ -1,5 +1,7 @@
+% extends "base.html" %}
+
 {% load static %}
-<!--
+{%  block content %}<!--
 	Author: W3layouts
 	Author URL: http://w3layouts.com
 	License: Creative Commons Attribution 3.0 Unported
@@ -9,7 +11,7 @@
 <html lang="zxx">
 
 <head>
-    <title>{% block title %} Agriculture {%  endblock %}</title>
+    <title>Arable Agriculture Category Bootstrap responsive Web Template | Blog :: w3layouts</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <meta name="keywords" content="Arable a Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -23,22 +25,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             window.scrollTo(0, 1);
         }
     </script>
-    <link href="{% static 'css/bootstrap.css' %}" rel='stylesheet' type='text/css' />
-    <link rel="stylesheet" href="{% static 'css/component.css' %}" type="text/css" media="all">
-    <link href="{% static 'css/style.css' %}" rel='stylesheet' type='text/css' />
-    <link rel="stylesheet" href="{% static 'css/owl.theme.css' %}" type="text/css" media="all">
-    <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}" type="text/css" media="screen" property="" />
-    <link href="{% static 'css/minimal-slider.css' %}" rel='stylesheet' type='text/css' />
-    <link href="{% static 'css/fontawesome-all.css' %}" rel="stylesheet">
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="css/component.css" type="text/css" media="all">
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <link href="css/single.css" rel='stylesheet' type='text/css' />
+    <link href="css/fontawesome-all.css" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=BenchNine:300,400,700" rel="stylesheet">
-
-    {% block css  %} {% endblock %}
 </head>
 
 <body>
     <div class="mian-content">
-
         <div class="header-top-w3layouts-agile">
             <div class="top-head-wthree text-left">
                 <div class="row top-content-info">
@@ -96,7 +93,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="col-md-6 logo text-center">
                         <h1>
                             <a class="navbar-brand" href="index.html">
-                            <i class="fas fa-leaf"></i>Agri Solutions</a>
+                            <i class="fas fa-leaf"></i>Arable</a>
                         </h1>
                     </div>
                     <div class="col-md-3 login-right-img text-center">
@@ -108,14 +105,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="header-bg">
                 <div class="container">
                     <header>
-                        <nav class="navbar navbar-expand-lg navbar-light">
+                                               <nav class="navbar navbar-expand-lg navbar-light">
                             <button class="navbar-toggler navbar-toggler-right mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 				   </button>
 
+
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav mr-lg-auto text-left">
-                                    <li class="nav-item active">
+                                    <li class="nav-item">
                                         <a class="nav-link" href="index.html">Home
                                         <span class="sr-only">(current)</span>
                                     </a>
@@ -138,7 +136,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     <li class="nav-item">
                                         <a class="nav-link" href="gallery.html">Gallery</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item active">
                                         <a class="nav-link" href="blog.html">Blog</a>
                                     </li>
                                     <li class="nav-item">
@@ -150,32 +148,207 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     <input class="form-control" type="search" placeholder="Search here..." name="Search" required="">
                                     <button class="btn btn1 my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
                                 </form>
+
+
+
                             </div>
                         </nav>
-
                     </header>
                 </div>
             </div>
         </div>
+    </div>
+    <!-- end of main image slider container -->
+    <div class="inner-page">
+    </div>
+    <!-- /breadcrumb -->
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="index.html">Home</a>
+        </li>
+        <li class="breadcrumb-item active">Blog</li>
+    </ol>
+    <!-- //breadcrumb -->
+     <section class="banner-bottom-w3layouts py-lg-5 py-md-5 py-3">
+        <div class="container">
+            <div class="inner-sec-w3ls-agileits py-lg-5 py-3">
+                <h4 class="sub-tittle text-uppercase text-center">Recent Talks</h4>
+                <h3 class="tittle text-center mb-md-5 mb-4"> Blog Posts</h3>
+                <div class="row">
+                    <!--left-->
+                    <div class="col-lg-8 left-blog-info text-left">
+                        <div class="blog-sec">
+                            <div class="about-in blog-grid-info text-left">
+                                <div class="card img">
+                                    <div class="card-body img">
+                                        <img src="{% static 'images/1.jpg'%}" alt="" class="img-fluid">
+                                        <div class="blog-des blogger">
+                                            <span class="entry-date">June 18, 2018</span>
+                                            <h5 class="card-title text-uppercase mt-2"><a href="single.html">Vivamus id tempor felis. Cras sagittis mi sit amet </a></h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing.
+                                            </p>
+                                            <div class="log-in mt-md-3 mt-2">
+                                                <a class="hover-2 btn text-uppercase" href="single.html">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about-in blog-grid-info text-left my-lg-4 ">
+                                <div class="card img">
+                                    <div class="card-body img">
+                                        <img src="{% static 'images/2.jpg'%}" alt="" class="img-fluid">
+                                        <div class="blog-des blogger">
+                                            <span class="entry-date">June 20, 2018</span>
+                                            <h5 class="card-title text-uppercase mt-2"><a href="single.html">Vivamus id tempor felis. Cras sagittis mi sit amet </a></h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing.
+                                            </p>
+                                             <div class="log-in mt-md-3 mt-2">
+                                                <a class="hover-2 btn text-uppercase" href="single.html">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about-in blog-grid-info text-left">
+                                <div class="card img">
+                                    <div class="card-body img">
+                                        <img src="{% static 'images/3.jpg'%}" alt="" class="img-fluid">
+                                        <div class="blog-des blogger">
+                                            <span class="entry-date">June 25, 2018</span>
+                                            <h5 class="card-title text-uppercase mt-2"><a href="single.html">Vivamus id tempor felis. Cras sagittis mi sit amet </a></h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing.
+                                            </p>
+                                             <div class="log-in mt-md-3 mt-2">
+                                                <a class="hover-2 btn text-uppercase" href="single.html">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-        {% block content %}
+    
+                        </div>
+                    </div>
 
-        {% endblock %}
+                    <!--//left-->
+                    <!--right-->
+                    <aside class="col-lg-4 right-blog-con text-right">
+                        <div class="right-blog-info text-left">
+                            <div class="tech-btm">
+                                <img src="{% static 'images/g4.jpg'%}" class="img-fluid rounded" alt="">
+                            </div>
+                            <div class="tech-btm">
+                                <h4>Sign up to our newsletter</h4>
+                                <p>Pellentesque dui, non felis. Maecenas male </p>
+                                <form action="#" method="post">
+                                    <input class="form-control" type="email" placeholder="Email" required="">
+                                    <input class="form-control" type="submit" value="Subscribe">
+                                </form>
 
+                            </div>
+                            <div class="tech-btm">
+                                <h4>Categories</h4>
+                                <ul class="list-group single">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Cras justo odio
+                                        <span class="badge badge-primary badge-pill">14</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Dapibus ac facilisis in
+                                        <span class="badge badge-primary badge-pill">2</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Morbi leo risus
+                                        <span class="badge badge-primary badge-pill">1</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tech-btm">
+                                <h4>Top stories of the week</h4>
 
-<div class="newsletter py-lg-5 py-4 text-center">
-        <div class="newsletter-inner py-lg-5 py-4">
-            <h3 class="tittle text-center mb-lg-5 mb-3">
-                Don't forget to Sign up</h3>
-            <div class="newsright">
-                <form action="#" method="post" class="d-flex">
-                    <input class="form-control" type="email" placeholder="" name="email" required="">
-                    <input class="form-control" type="submit" value="Subscribe">
-                </form>
+                                <div class="blog-grids row mb-3">
+                                    <div class="col-md-5 blog-grid-left">
+                                        <a href="single.html">
+										<img src="{% static 'images/g3.jpg'%}" class="img-fluid rounded" alt="">
+									</a>
+                                    </div>
+                                    <div class="col-md-7 blog-grid-right">
+
+                                        <h5>
+                                            <a href="single.html">Pellentesque dui, non felis. Maecenas male non felis </a>
+                                        </h5>
+                                        <div class="sub-meta">
+                                            <span>
+											<i class="far fa-clock"></i> 20 Jan, 2018</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="blog-grids row mb-3">
+                                    <div class="col-md-5 blog-grid-left">
+                                        <a href="single.html">
+										<img src="{% static 'images/g6.jpg'%}" class="img-fluid rounded" alt="">
+									</a>
+                                    </div>
+                                    <div class="col-md-7 blog-grid-right">
+                                        <h5>
+                                            <a href="single.html">Pellentesque dui, non felis. Maecenas male non felis </a>
+                                        </h5>
+                                        <div class="sub-meta">
+                                            <span>
+											<i class="far fa-clock"></i> 20 Feb, 2018</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="single-gd my-5 tech-btm">
+                                <h4>Our Progress</h4>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="single-gd tech-btm">
+                                <h4>Recent Post</h4>
+                                <div class="blog-grids">
+                                    <div class="blog-grid-left">
+                                        <a href="single.html">
+										<img src="{% static 'images/g2.jpg'%}" class="img-fluid rounded" alt="">
+									</a>
+                                    </div>
+                                    <div class="blog-grid-right">
+
+                                        <h5>
+                                            <a href="single.html">Pellentesque dui, non felis. Maecenas male</a>
+                                        </h5>
+                                    </div>
+                                    <div class="clearfix"> </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </aside>
+                    <!--//right-->
+                </div>
+
             </div>
         </div>
-    </div>
-    <!-- //newsletter-->
+    </section>
+    <!--/single-->
+
     <!--footer -->
     <footer class="footer-emp-wthree bg-dark dotts py-lg-5 py-3">
         <div class="container">
@@ -343,42 +516,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
     <!--//model-form-->
     <!-- js -->
-    <script src="{% static 'js/jquery-2.2.3.min.js' %}"></script>
-    <script src="{% static 'js/minimal-slider.js' %}"></script>
-    <script src="{% static 'js/toucheffects.js' %}"></script>
-    <script src="{% static 'js/modernizr.custom.js' %}"></script>
-    <!-- carousel -->
-    <script src="{% static 'js/owl.carousel.js' %}"></script>
-    <script>
-        $(document).ready(function() {
-            $('.owl-carousel').owlCarousel({
-                loop: true,
-                margin: 10,
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1,
-                        nav: true
-                    },
-                    600: {
-                        items: 1,
-                        nav: false
-                    },
-                    900: {
-                        items: 1,
-                        nav: false
-                    },
-                    1000: {
-                        items: 2,
-                        nav: true,
-                        loop: false,
-                        margin: 20
-                    }
-                }
-            })
-        })
-    </script>
-    <!-- //carousel -->
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
     <script>
         $(document).ready(function() {
             $(".dropdown").hover(
@@ -395,8 +534,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </script>
     <!-- //dropdown nav -->
     <!-- stats -->
-    <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
-    <script src="{% static 'js/jquery.countup.js' %}"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.countup.js"></script>
     <script>
         $('.counter').countUp();
     </script>
@@ -421,8 +560,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!-- //password-script -->
 
     <!--/ start-smoth-scrolling -->
-    <script src="{% static 'js/move-top.js' %}"></script>
-    <script src="{% static 'js/easing.js' %}"></script>
+    <script src="js/move-top.js"></script>
+    <script src="js/easing.js"></script>
     <script>
         jQuery(document).ready(function($) {
             $(".scroll").click(function(event) {
@@ -436,13 +575,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <script>
         $(document).ready(function() {
             /*
-                                    var defaults = {
-                                          containerID: 'toTop', // fading element id
-                                        containerHoverID: 'toTopHover', // fading element hover id
-                                        scrollSpeed: 1200,
-                                        easingType: 'linear' 
-                                     };
-                                    */
+            						var defaults = {
+            							  containerID: 'toTop', // fading element id
+            							containerHoverID: 'toTopHover', // fading element hover id
+            							scrollSpeed: 1200,
+            							easingType: 'linear' 
+            						 };
+            						*/
 
             $().UItoTop({
                 easingType: 'easeOutQuart'
@@ -452,8 +591,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </script>
     <!--// end-smoth-scrolling -->
     <!-- /js -->
-    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="js/bootstrap.js"></script>
     <!-- //js -->
 </body>
 
 </html>
+  {%  endblock %}
