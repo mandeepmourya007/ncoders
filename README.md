@@ -7,9 +7,16 @@ middleman for smooth transactions.
 
 #Agendas
 
--->proving info with respect to the current season
+-->proving info with respect to the current season \n
 -->adivsory chat box
 -->weather alerts
--->critical alerts(fires,plaques)
+-->critical alerts(fires,plagues)
 -->open market to connect sellers straight to the buyers
 
+#Goals
+
+-->designing template
+-->creating sign up form
+-->email integration
+-->providing info according to geolocatlity
+-->
