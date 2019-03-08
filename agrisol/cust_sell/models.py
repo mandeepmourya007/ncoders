@@ -3,8 +3,8 @@ from django.db import models
 # Create your models here.
 class seller(models.Model):
     name = models.CharField(max_length=25)
-    rate = models.IntegerField(max_length=25)
-    images = models.FileField(null=True, blank=True, upload_to="static/events/images")
+    rate = models.IntegerField()
+    images = models.FileField(null=True, blank=True, upload_to="static/seller/images")
     state = models.CharField(max_length=25)
     city = models.CharField(max_length=25)
 
