@@ -8,10 +8,10 @@ middleman for smooth transactions.
 ## Agendas
 
 - [x] proving info with respect to the current season 
-* adivsory chat box - []
-* weather alerts - [x]
-* critical alerts(fires,plagues) - [x]
-* open market to connect sellers straight to the buyers - []
+- [] adivsory chat box 
+- [x] weather alerts 
+- [x] critical alerts(fires,plagues) 
+- [] open market to connect sellers straight to the buyers 
 
 ## Goals
 
