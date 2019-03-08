@@ -19,7 +19,7 @@ class crops(models.Model):
 
     season = models.CharField(max_length=40, choices=seasonf,
         default='Summer')
-    pesticides=models.ForeignKey(pesticides,on_delete= models.CASCADE,default="")
+    pesticides=models.ManyToManyField(pesticides)
 
     success_ratio = models.CharField(max_length=3)
     price_range = models.CharField(max_length=50,default="")
@@ -42,5 +42,3 @@ class vegetables(models.Model):
     success_ratio = models.CharField(max_length=3)
     def __str__(self):
         return self.name
-
-
