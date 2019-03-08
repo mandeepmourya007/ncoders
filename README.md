@@ -1,4 +1,4 @@
-################################## AGRICULTURAL INNOVATION ################################
+################################## AGRICULTURAL INNOVATION ###############################
 
 -->developing a webapp to aid farmers as well as household folks by providing scientific information on new farming trends,tools,methods,
 sending alerts about hazardous weather beforehand while simultaneously tackling problems faced by today's farmers like eliminating 
