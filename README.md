@@ -7,7 +7,7 @@ middleman for smooth transactions.
 
 #Agendas
 
--->proving info with respect to the current season \n
+-->proving info with respect to the current season 
 -->adivsory chat box
 -->weather alerts
 -->critical alerts(fires,plagues)
