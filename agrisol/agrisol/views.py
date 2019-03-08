@@ -7,9 +7,12 @@ from django.contrib.auth.models import User
 from accounts.forms import userform
 
 
+<<<<<<< HEAD
 def log_out(request):
     logout(request)
     return redirect(('home'))
+=======
+>>>>>>> f7dffebfe42c313514102ff691c1004500356f64
 def home(request):
     if request.method=="POST":
         print(request.POST)
