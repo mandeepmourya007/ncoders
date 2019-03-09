@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+
+{% load static %}
+{%  block content %}
+
+        <!-- main image slider container -->
+        <div class="slide-window">
+            <div class="slide-wrapper" style="width:300%;">
+                <div class="slide">
+                    <div class="slide-caption text-center">
+                        <p class="text-uppercase">The right choice</p>
+                        <h3 class="text-uppercase">Improving agriculture, improving lives.</h3>
+
+                        <div class="cont-btn">
+                            <a class="btn text-uppercase" href="{% url "farmer:farmer" %}">
+                            Farmer</a>
+                             <a class="btn text-uppercase" href="{% url "household:household" %}">
+                            Household</a>
+                            <a class="btn text-uppercase" href="#">
+                            Contributor</a>
+                        </div>
+
+                        <div class="cont-btn">
+                            <a class="btn text-uppercase" href="contact.html">
+                            Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide2">
+                    <div class="slide-caption text-center">
+                        <p class="text-uppercase">Ready to go</p>
+                        <h3 class="text-uppercase">High tech advantages with old fashioned service.</h3>
+
+                        <div class="cont-btn">
+                            <a class="btn text-uppercase" href="{% url "farmer:farmer" %}">
+                            Farmer</a>
+                             <a class="btn text-uppercase" href="{% url "household:household" %}">
+                            Household</a>
+                            <a class="btn text-uppercase" href="#">
+                            Contributor</a>
+                        </div>
+
+                        <div class="cont-btn">
+                            <a class="btn text-uppercase" href="contact.html">
+                            Contact</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="slide slide3">
+                    <div class="slide-caption text-center">
+                        <p class="text-uppercase">The right choice.</p>
+                        <h3 class="text-uppercase">Improving agriculture, improving lives.</h3>
+
+                        <div class="cont-btn">
+                            <a class="btn text-uppercase" href="{% url "farmer:farmer" %}">
+                            Farmer</a>
+                             <a class="btn text-uppercase" href="{% url "household:household" %}">
+                            Household</a>
+                            <a class="btn text-uppercase" href="#">
+                            Contributor</a>
+                        </div>
+
+                        <div class="cont-btn">
+                            <a class="btn text-uppercase" href="contact.html">
+                            Contact</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="slide-controller">
+                <div class="slide-control-left">
+                    <div class="slide-control-line"></div>
+                    <div class="slide-control-line"></div>
+                </div>
+                <div class="slide-control-right">
+                    <div class="slide-control-line"></div>
+                    <div class="slide-control-line"></div>
+                </div>
+            </div>
+        </div>
+        <!-- main image slider container -->
+    </div>
+    <!-- end of main image slider container -->
+
+    <!-- banner-bottom-w3layouts -->
+    <div class="banner-bottom-w3layouts py-lg-2 py-2">
+        <div class="container">
+            <div class="inner-sec-w3ls-agileits py-lg-2 py-2">
+                <h4 class="sub-tittle text-uppercase text-center">What we do</h4>
+                <h3 class="tittle text-left mb-lg-2 mb-2">
+                            </h3>
+                <ul class="grid cs-style-5 row">
+                    <li class="grid-info-img">
+
+                        <figure>
+                        	<h3>Farmers</h3>
+                            <img src="{% static 'images/g3.jpg' %}" class="img-fluid" alt="img03">
+                            <figcaption>
+                                <h3>Farmers</h3>
+                               <a href=#>Select</a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="grid-info-img">
+                        <figure>
+                        	<h3>Household</h3>
+                            <img src="{% static 'images/g5.jpg' %}" class="img-fluid" alt="img03">
+                            <figcaption>
+                                <h3>Household</h3>
+
+                                <a href="gallery.html">Select</a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--// banner-bottom-w3layouts -->
+    <!-- /bottom-last -->
+
+    <!-- //bottom-last -->
+    <!-- ab -->
+
+
+    {%  endblock %}

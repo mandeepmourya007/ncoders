@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% block title %}
+vegetables
+{% endblock %}
+{% block content %}
+
+
+
+  <!--<div class="col-sm-4">-->
+    <!--<div class="card-body">-->
+    <!--<h5 class="card-title">{{ f.name }}</h5>-->
+
+    <!--<a href="#" class="btn btn-primary">Explore</a>-->
+  <!--</div>-->
+    <!--<p>yoyoyyo</p>-->
+  <!--<img src="../{{ f.images }}" class="card-img-top" alt="...">-->
+  <!--<div class="card-body">-->
+    <!--<h5 class="card-title">{{ f.name }}</h5>-->
+
+    <!--<a href="#" class="btn btn-primary">Explore</a>-->
+  <!--</div>-->
+  <!--</div>-->
+
+<div class="container">
+
+  <div style="padding-top:20px" class="row">
+       {% for f in crops %}
+    <div class="col-sm-6">
+      <div class="card text-center">
+  <div class="card-header">
+    <h1>Name : {{ f.name }}</h1>
+  </div>
+  <div class="card-body">
+
+      <img style="height:250px;width:250px;" src="../{{ f.images }}" class="card-img-top" alt="...">
+    <p class="card-text">Description : {{ f.description }}</p>
+      </div>
+
+          <div class="card-footer text-muted">
+    Season : {{ f.season }}
+  </div>
+
+
+          <div class="card-footer text-muted">
+    pesticides : {{ f.pesticides }}
+  </div>
+
+
+
+          <div class="card-footer text-muted">
+    success_ratio : {{ f.success_ratio }}
+  </div>
+
+
+
+
+          <div class="card-footer text-muted">
+    price_range : {{ f.price_range }}
+  </div>
+</div>
+
+    <hr></div>{% endfor %}</div>
+
+
+{% endblock %}

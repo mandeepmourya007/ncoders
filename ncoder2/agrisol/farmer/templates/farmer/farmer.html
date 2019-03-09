@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% block title %}
+Farmer
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="jumbotron">
+  <h1 class="display-4">Grow Crops</h1>
+      <a class="btn btn-success btn-lg" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    GROW
+  </a>
+      <!--<a class="btn btn-success btn-lg" href="{% url "household:flowers" %}" role="button">GROW</a>-->
+</div>
+
+    <div class="collapse" id="collapseExample">
+  <div class="card card-body">
+     <form action="{% url "farmer:crops" %}"" method="post">
+           {% csrf_token %}
+         <p>Select Season</p>
+  <div class="form-group">
+
+    <select class="form-control" name="crops" id="exampleFormControlSelect1">
+      <option>Autumn</option>
+      <option>Spring</option>
+      <option>Summer</option>
+      <option>Winter</option>
+
+    </select>
+      <input class = "btn btn-primary"  type="submit" value="submit"/>
+  </div></form>
+  </div>
+</div>
+
+
+    <div class="jumbotron">
+  <h1 class="display-4">Grow Vegetables</h1>
+      <a class="btn btn-success btn-lg" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
+    GROW
+  </a>
+      <!--<a class="btn btn-success btn-lg" href="{% url "household:flowers" %}" role="button">GROW</a>-->
+</div>
+
+    <div class="collapse" id="collapseExample1">
+  <div class="card card-body">
+     <form action="{% url "household:vegetables" %}" method="post">
+           {% csrf_token %}
+         <p>Select Season</p>
+  <div class="form-group">
+
+    <select class="form-control" name='vegetables' id="exampleFormControlSelect1">
+      <option>Autumn</option>
+      <option>Spring</option>
+      <option>Summer</option>
+      <option>Winter</option>
+
+    </select>
+      <input class = "btn btn-primary" type="submit" value="submit"/>
+  </div></form>
+  </div>
+</div>
+
+
+</div>
+
+
+
+
+
+{% endblock %}
