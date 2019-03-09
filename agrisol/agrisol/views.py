@@ -5,7 +5,14 @@ from django.contrib.auth.decorators import login_required
 from django.conf import settings
 from django.contrib.auth.models import User
 from accounts.forms import userform
+from django.core.mail import EmailMessage
 
+#email
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'akaaalinc@gmail.com'
+EMAIL_HOST_PASSWORD = 'mandeepakaal'
+EMAIL_PORT = 587
 
 
 def log_out(request):
@@ -22,6 +29,7 @@ def home(request):
             login(request,user)
             messages.success(request, ' Welcome to  kissan '+ u )
             return redirect("home")
+
     return render(request,"home.html",{'form':userform})
 
 def farmer(request):
@@ -46,3 +54,9 @@ def sign_up(request):
     form1 = userform()
 
     return render(request,'home.html',{'form':form1})
+def Email(request):
+    mail_subject = 'notification'
+    to_email = ["sanyamjhingan99@gmail.com"]
+    message='sanyam ka bhai ka laptop'
+    email = EmailMessage(mail_subject, message, to=to_email)
+    email.send()
