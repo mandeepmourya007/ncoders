@@ -27,4 +27,5 @@ urlpatterns = [
     path("hepline/",include("helpline.urls",namespace="helpline")),
     path("household/",include("household.urls",namespace="household")),
     path("logout",views.log_out,name="log_out"),
+    path("signup", views.sign_up, name="sign_up"),
 ]
